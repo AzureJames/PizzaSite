@@ -74,6 +74,11 @@ header, footer {
   padding-bottom: .5rem;
 }
 
+h1 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
 .padded-section {
   background-color: white;
   padding: 1rem;
@@ -160,9 +165,19 @@ h2 {
   min-width: 50rem;
 }
 
+.our-cuisine {
+  padding-top: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
 .contact-days {
   display: flex;
   justify-content: space-around;
+}
+
+.contact {
+  margin-bottom: 4rem;
 }
 
 .contact-days li {
