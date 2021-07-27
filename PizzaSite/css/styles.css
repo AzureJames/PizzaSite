@@ -28,7 +28,226 @@ verify outline, css, html
 
 */
 
-
+/* whole page */
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
+
+body {
+  background-color: lightgray;
+}
+
+.container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+svg {
+  max-height: 2.8rem;
+}
+
+/* layout */
+
+header, footer {
+  background-color: lightyellow;
+}
+
+.logo {
+  max-height: 7rem;
+  border-radius: .9rem;
+}
+
+.nav-list {
+  text-align: center;
+}
+
+.menu-show {
+  background-color: pink;
+}
+
+.nav-list li {
+  padding-bottom: .5rem;
+}
+
+.padded-section {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.why-rays {
+  margin-top: 2rem;
+}
+
+h1, 
+.menu-button {
+  text-align: center;
+}
+
+.pizza-plate-container {
+  margin-right: -2rem;
+  margin-left: -2rem;
+  width: 100%;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pizza-plate {
+  display: block;
+  width: max-content;
+  margin: auto;
+}
+
+.padded-section {
+  border-radius: .6rem;
+  box-shadow: 8px 8px 6px #888888;
+}
+
+.menu-button {
+  border-radius: .6rem;
+  display: block;
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 12rem;
+  background: rgb(65,65,65);
+  box-shadow: 6px 6px 4px #888888;
+  background: linear-gradient(90deg, rgba(65,65,65,1) 35%, rgba(149,149,149,1) 100%);
+}
+
+.menu-button:hover {
+  background: rgb(97, 97, 97);
+  color: white;
+  text-decoration: none;
+  box-shadow: 5px 5px 3px #888888;
+  background: linear-gradient(90deg,rgba(149,149,149,1), rgba(65,65,65,1) 35%,  100%);
+}
+
+h2 {
+  text-align: center;
+}
+
+.pizza {
+  margin-left: -2rem;
+  margin-right: -2rem;  
+}
+
+.pizza-container {
+  background-color: black;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: auto;
+}
+
+.contact {
+  margin-bottom: 2rem;
+}
+
+ .two-col ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-width: 50rem;
+}
+
+.contact-days {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-days li {
+  width: 50%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: .7rem;
+}
+
+
+
+
+/*typography*/
+
+p, li, a {
+  font-size: 1.6rem;
+  color: black;
+  font-family: 'Biryani', sans-serif;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h2 {
+  font-size: 2.6rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.menu-button {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  color: lightgray;
+}
+
+
+
+
+@media  screen and (min-width: 800px) {
+   header {
+     display: flex;
+     justify-content: space-between;
+   }
+
+   header * {
+      margin: .7rem;
+   }
+   header ul {
+     display: flex;
+   }
+  .home-flex-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .why-rays {
+      display: flex;
+      margin: auto;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .why-rays p {
+      max-width: 33%;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    footer ul {
+      display: flex;
+      padding: .7rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
