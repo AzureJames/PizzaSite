@@ -51,7 +51,32 @@ svg {
   max-height: 2.8rem;
 }
 
+ul {
+  padding: 0;
+}
+
+input, 
+label {
+  display: block;
+  font-size: 1.6rem;
+  font-family: ;
+}
+
 /* layout */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 7rem;
+}
+
+header * {
+   margin: .7rem;
+}
+header ul {
+  display: flex;
+}
 
 header, footer {
   background-color: lightyellow;
@@ -84,6 +109,8 @@ h1 {
   padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  border-radius: .6rem;
+  box-shadow: 8px 8px 6px #888888;
 }
 
 .why-rays {
@@ -96,6 +123,7 @@ h1,
 }
 
 .pizza-plate-container {
+  margin-top: 2rem;
   margin-right: -2rem;
   margin-left: -2rem;
   width: 100%;
@@ -108,11 +136,6 @@ h1,
   display: block;
   width: max-content;
   margin: auto;
-}
-
-.padded-section {
-  border-radius: .6rem;
-  box-shadow: 8px 8px 6px #888888;
 }
 
 .menu-button {
@@ -180,8 +203,67 @@ h2 {
   margin-bottom: 4rem;
 }
 
-.contact-days li {
-  width: 50%;
+.merch {
+  max-width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 1.6rem;
+  display: block;
+  transform: rotate(12deg);
+  background-color: black;
+}
+
+.merch:hover {
+  cursor: pointer;
+}
+
+.merch p {
+  color: white;
+}
+
+.merch-img {
+  max-height: 10rem;
+  rotation-point:50% 50%;
+  rotation:20deg;
+}
+
+
+label {
+  padding-left: 2rem;
+}
+
+.hint {
+  padding-left: 4rem;
+}
+
+input {
+  width: 90%;
+  max-width: 60rem;
+  margin: auto;
+  padding: .4rem;
+  border-radius: .4rem;
+}
+
+#submit-button {
+  border-radius: .6rem;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 14rem;
+  background: rgb(65,65,65);
+  box-shadow: 6px 6px 4px #888888;
+  background: linear-gradient(90deg, rgba(65,65,65,1) 35%, rgba(149,149,149,1) 100%);
+}
+
+#submit-button:hover {
+  background: rgb(97, 97, 97);
+  color: white;
+  text-decoration: none;
+  box-shadow: 5px 5px 3px #888888;
+  background: linear-gradient(90deg,rgba(149,149,149,1), rgba(65,65,65,1) 35%,  100%);
 }
 
 footer {
@@ -190,12 +272,17 @@ footer {
   padding: .7rem;
 }
 
+footer li {
+  padding-top: .3rem;
+  padding-bottom: .3rem;
+}
+
 
 
 
 /*typography*/
 
-p, li, a {
+p, li, a, label {
   font-size: 1.6rem;
   color: black;
   font-family: 'Biryani', sans-serif;
@@ -212,7 +299,13 @@ h2 {
   font-family: 'Pathway Gothic One', sans-serif;
 }
 
-.menu-button {
+h3 {
+  font-size: 2.2rem;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.menu-button,
+button {
   text-transform: uppercase;
   font-size: 2.2rem;
   color: lightgray;
@@ -222,17 +315,8 @@ h2 {
 
 
 @media  screen and (min-width: 800px) {
-   header {
-     display: flex;
-     justify-content: space-between;
-   }
 
-   header * {
-      margin: .7rem;
-   }
-   header ul {
-     display: flex;
-   }
+
   .home-flex-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -242,7 +326,8 @@ h2 {
       display: flex;
       margin: auto;
       justify-content: center;
-      margin-top: 2rem;
+      margin-top: 4rem;
+      align-items: center;
     }
 
     .why-rays p {
@@ -251,9 +336,36 @@ h2 {
       margin-right: 2rem;
     }
 
+    .why-rays h2 {
+      background-color: white;
+      margin-right: 2.4rem;
+      border-radius: .6rem;
+      border: .2rem black solid;
+      padding: 1.6rem;
+    }
+
     footer ul {
       display: flex;
       padding: .7rem;
+    }
+
+    footer li {
+      margin-left: 1.2rem;
+      margin-right: 1.2rem;
+    }
+
+    form {
+      max-width: 60rem;
+      margin: auto;
+    }
+
+    label {
+      display: inline-block;
+    }
+
+    footer {
+      max-height: 5.5rem;
+      margin-top: 4rem;
     }
 
 }
